@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <p class="left">9:41</p>
+                <div class="middle">
+                    <img src="/heading/middle_line.png" class="middle_icon1">
+                    <img src="/heading/record.png" class="middle_icon2">
+                    
+                </div>
+                <div class="right">
+                    <img src="/heading/cellular.png" class="cellular">
+                    <img src="/heading/wifi.png" class="wifi">
+                    <img src="/heading/battery.png" class="battery">
+                </div>
+            </div>
+            <div class="screen" id="disp-screen">
+                <input type="text" id="result">
+            </div>
+            <div class="keypad">
+                <div class="first">
+                    <button class="lightgrey" onclick="clearResult()">AC</button>
+                    <button class="lightgrey" onclick="operand('%')">%</button>
+                    <button class="lightgrey" onclick="operand('+/-')">+/-</button>
+                    <button class="orange" onclick="operand('/')">/</button>
+                    
+
+                </div>
+                <div class="second">
+                    <button class="grey" onclick="append('7')">7</button>
+                    <button class="grey" onclick="append('8')">8</button>
+                    <button class="grey" onclick="append('9')">9</button>
+                    <button class="orange" onclick="operand('*')">x</button>
+                    
+
+                </div>
+                
+                <div class="third">
+                    <button class="grey" onclick="append('4')">4</button>
+                    <button class="grey" onclick="append('5')">5</button>
+                    <button class="grey" onclick="append('6')">6</button>
+                    <button class="orange" onclick="operand('-')">-</button>
+                    
+                </div>
+                <div class="fourth">
+                    <button class="grey" onclick="append('1')">1</button>
+                    <button class="grey" onclick="append('2')">2</button>
+                    <button class="grey" onclick="append('3')">3</button>
+                    <button class="orange" onclick="operand('+')">+</button>
+                    
+                </div>
+                <div class="fifth">
+                    <button class="grey2" onclick="append('0')">0</button>
+                    
+                    <button class="grey" onclick="append('.')">.</button>
+                    <button class="orange" onclick="equals()">=</button>
+                    
+                </div>
+                
+
+            </div>
+            <div class="footer">
+                <img src="/heading/minus.png" class="footer-icon">
+
+            </div>
+        </div>
+        <script src="script.js">
+          
+        </script>
+    </body>
+
+</html>
